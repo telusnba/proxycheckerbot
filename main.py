@@ -20,8 +20,8 @@ required_vars = [
     "BOT_TOKEN",
     "API_USER1", "API_KEY1",
     "API_USER2", "API_KEY2",
-    "API_USER3", "API_KEY3",
-    "API_USER4", "API_KEY4",
+    # "API_USER3", "API_KEY3",
+    # "API_USER4", "API_KEY4",
 ]
 
 missing = [v for v in required_vars if not getattr(config, v, None)]
@@ -35,8 +35,8 @@ dp = Dispatcher()
 accounts = [
     {"user": config.API_USER1, "key": config.API_KEY1},
     {"user": config.API_USER2, "key": config.API_KEY2},
-    {"user": config.API_USER3, "key": config.API_KEY3},
-    {"user": config.API_USER4, "key": config.API_KEY4},
+    # {"user": config.API_USER3, "key": config.API_KEY3},
+    # {"user": config.API_USER4, "key": config.API_KEY4},
 ]
 
 current_account_index = 0
